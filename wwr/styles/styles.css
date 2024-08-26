@@ -1,0 +1,61 @@
+/* Full content */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #0f4c5c;
+}
+
+.book, .join {
+    background-color: #fb8b24;
+}
+
+.book:hover, .join:hover {
+    background-color: #9a031e;
+    color: #fb8b24;
+}
+
+/* Header */
+header {
+    background-color: #fb8b24;
+}
+
+nav a {
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #9a031e;
+}
+
+/* Hero */
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+/* Main */
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: #fb8b24;
+}
+
+.msg {
+    background-color: #5f0f40;
+}
+
+/* Footer */
+
+footer {
+    background-color: #fb8b24;
+}
