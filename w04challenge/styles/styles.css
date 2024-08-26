@@ -1,0 +1,56 @@
+body {
+    background-color: steelblue;
+    text-align: center;
+}
+
+/* Header */
+.star {
+    text-align: center;
+}
+
+.star h4 {
+    color: white;
+}
+
+.education {
+    color: white;
+}
+
+.education:hover {
+    color: black;
+}
+
+#growth {
+    color: white;
+}
+
+
+/* Body Content */
+.faith {
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.faith li {
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    width: 130px;
+    height: 140px;
+}
+
+.quote {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    padding: 1.5px;
+    margin: auto;
+    color: white;
+}
+
+footer {
+    text-align: center;
+}
