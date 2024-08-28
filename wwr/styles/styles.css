@@ -21,6 +21,8 @@ body {
     font-family: "Roboto", "Open Sands";
     font-size: 18px;
     padding: 15px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -44,7 +46,9 @@ body {
 .home-title {
     font-family: "Open Sans", "Roboto";
     font-size: 1.5em;
+    margin-top: 10px;
 }
+
 
 h2 {
     margin: 0;
@@ -86,6 +90,10 @@ main section {
     text-align: center;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
     background-color: #fb8b24;
@@ -110,12 +118,20 @@ main section {
     padding-bottom: 15px;
 }
 
+.rivers-cards, .camping-cards, .rapids-cards {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid black;
+}
 /* Footer */
 
 footer {
     background-color: #9a031e;
     color: #fb8b24;
     padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
