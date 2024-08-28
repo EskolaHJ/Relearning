@@ -9,7 +9,7 @@
 
 body {
     background-color: #0f4c5c;
-    font-family: "Open Sans", "Roboto";
+    font-family: "Open Sans", "Roboto", "sans-serif";
     margin: 0;
     padding: 0;
 }
@@ -18,7 +18,7 @@ body {
     background-color: #fb8b24;
     color: #9a031e;
     text-decoration: none;
-    font-family: "Roboto", "Open Sands";
+    font-family: "Roboto", "Open Sands", "sans-serif";
     font-size: 18px;
     padding: 15px;
     margin-top: 50px;
@@ -44,7 +44,7 @@ body {
 }
 
 .home-title {
-    font-family: "Open Sans", "Roboto";
+    font-family: "Open Sans", "Roboto", "sans-serif";
     font-size: 1.5em;
     margin-top: 10px;
 }
@@ -107,13 +107,13 @@ main section img {
 
 .msg h2 {
     color: #fb8b24;
-    font-family: "Open Sans","Roboto";
+    font-family: "Open Sans","Roboto", "sans-serif";
     font-size: 1.5em;
 }
 
 .msg p {
     color: #fb8b24;
-    font-family: "Roboto", "Open Sans";
+    font-family: "Roboto", "Open Sans", "sans-serif";
     font-size: .8em ;
     padding-bottom: 15px;
 }
