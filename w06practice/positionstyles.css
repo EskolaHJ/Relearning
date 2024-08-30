@@ -4,12 +4,14 @@
   /* This is the parent of the activity 1 boxes. */
   display: grid; /* Enables the grid since it's in an element it creates a grid in the element */
   grid-template-columns: 1fr 1fr; /* Defines the columns */
+  justify-items: center; /* Justify controls the horizontal movement */
+  gap: 20px; /* gap adds space between the rows and columns */
 }
 .red1 { 
   width: 100%; 
   height: 100px; 
-  background-color: red; 
-
+  background-color: red;
+  grid-column: 1/3; /* grid-column property to specify how many columns an element should span */
 } 
 .green1 {
   width: 200px; 
@@ -26,6 +28,7 @@
   width: 100%; 
   height: 100px; 
   background-color: blue; 
+  grid-column: 1/3;
 } 
 /* Activity 2 styles */ 
 .content2 {
