@@ -118,16 +118,24 @@
 .content5 {
   /* This is the parent of the activity 5 boxes. */
   height: 400px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header header"
+    "sidebar main main main"
+    "footer footer footer footer";
 }
 .red5 { 
   width: 100px; 
   height: 100px; 
   background-color: red; 
+  grid-area: header / col1-start /last-line / 2;
 } 
 .green5 { 
   width: 100px; 
   height: 100px; 
-  background-color: green; 
+  background-color: green;
+  grid-area: sidebar / col1-start; 
 
 } 
 .yellow5 {
