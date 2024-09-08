@@ -20,22 +20,33 @@
         <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
       </section>
       <script> 
+       // select the anchor tag
         const link = document.querySelector("a");
+        // change the text content of the anchor tag
         link.textContent = "Mozilla Developer Network";
+        // change where the anchor tag will redirect
         link.href = "https://developer.mozilla.org";
 
+        // selecting the section tag
         const sect = document.querySelector("section");
+        // selecting the paragraph tag
         const para = document.createElement("p");
+        // changing the text
         para.textContent = "We hope you enjoyed the ride.";
         sect.appendChild(para);
 
+        // creates a new text node
         const text = document.createTextNode (
             " - the premier source for web development knowledge."
         );
 
+        // creates a new paragraph
         const linkPara = document.querySelector("p");
+
+        // adding new child node to parent node
         linkPara.appendChild(text);
 
+        // tying an css style attribute from highlight to class
         para.setAttribute("class", "highlight");
       </script>
   </body>
