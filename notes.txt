@@ -1,0 +1,183 @@
+Coding notes
+
+Var, short for variable, is a JavaScript keyword that declares a new variable
+
+myName is the variables name.
+
+You use camel casing in JavaScript which in JavaScript you bunch words together. So the first word is lower case and the rest after is upper cased.
+
+= is the assignment operator. So if you assign ‘Jacob’ to myName it would look something like this: var myName = ‘Jacob’
+
+‘Jacob’ is the assigned value using ( = ) to the variable myName
+
+You can call a declared variable with the string value of ‘Jacob’ using the console by referencing the variable name i.e. : console.log(myName) : which would output: Jacob
+
+Variable names cannot start with a number it has to be a letter and it is case sensitive. So if you did: console.log(myname) : it would come back with an error since the keyword myname has not been assigned to anything. Which it is bad practice to assign multiple values to different variables with the same name i.e. : myname myName.
+
+You don’t have to assign a value to a variable like let or var and you can assign it later on in the code. So like : let price; / console.log(price) // Output: undefined / price = 350; console.log(price); // Output: 350 : an un assigned variable will automatically have the value of undefined.
+
+Const - same as the let and var variable in terms of declaring a value for it. The key difference is that it is constant. Which means that it cannot be reassigned a new value. It will produce a TypeError. Const must be assigned a value when it is declared, if you don’t assign it a value you will get a SyntaxError.
+
+If you need to decided between const, let or, var think about whether you need to reassign it later on. If you do need to reassign it use let
+
+Variables and Math Operators. : let w = 4; / w = w + 1; / console.log(w); // Output: 5 : in this example we crated a variable w with the assigned value of 4. Then followed it up with w = w + 1; which increased the assigned value to 5 making w’s new assigned value to 5. Another way to do this is to do : let w = 4; / w += 1; / console.log(w); // Output: 5 : its a mathematical operation where the first operator is + using the number to the right, then reassigning w to the computed value. There are other mathematical assignment operators: -=, *=, /= : which is subtracting the number to the right, multiplying the number to the right and, dividing the number to the right. 
+
+Example:  1. let x = 20; / x -= 5; // can be written as x = x - 5; / console.log(x); // Output: 15
+		  2. let y = 50; / y *= 2; // can be written as y = y * 2; / console.log(y); // Output: 100
+		  3. let z = 8; / z /=2; // can be written  as z = z / 2; / console.log(z); // Output: 4
+
+The increment and Decrement Operator
+
+There are other mathematical assignment operators. This includes the increment operator (++) and decrement operator (- -)
+ The increment operator will increase the value of the variable by 1. Where the decrement operator will decrease the value of the variable by 1.
+ 
+Increment operator:  let a = 10; / a++; / console.log(a); // Output: 11
+Decrement operator: let b = 20/ b- - / console.log(b); // Output: 19
+
+String Concatenation with Variables
+
+The + operator can be used to combine two sting values if they are values stored in a variable. 
+
+Example: 
+let myPet= ‘armadillo’;
+console.log(‘I own a pet ‘ + myPet + ‘ . ‘);
+// Output: ‘I own a pet armadillo.’ 
+
+As seen in the example armadillo was assigned to the myPet variable. On the second line the + operator is used twice to combine three strings: ‘I own a pet’ the value myPet and ‘ . ‘
+
+Add a space in-between the last string and the single quote to separate the value from merging with the last word in the string.
+
+String Interpolation
+
+In ES6 version of JavaScript you can insert, or interpolate, variables into strings using template literals.
+
+Example:
+const myPet = ‘armadillo’;
+console.log(`I own a pet ${myPet}.`);
+// Output: I own a pet armadillo
+
+Notice that we are not using a single quote but a ` backtick ` we also put the variable myPet with a $ and the  { squiggle brackets } which will look like this for the interpolate
+`I own a pet ${myPet}.` 
+The biggest benefit for using template literals is making the code readability easier. Using template literals, you can more easily tell what the new string will be. And you don’t have to worry about escaping double quotes.
+
+Typeof operator
+
+Writing code it is useful to keep track of data types of the variables in your program. To check this we can use the typeof operator. The typeof operator check the value to its right and returns, or passes back, a string of the data type
+
+Example:
+
+Const unkown1 = ‘foo’;
+console.log(typeof unknown1); // Output: string
+
+Const unknown2 = 10;
+console.log(typeof unknown2); // Output: number
+
+Const unknown3 = true;
+console.log(typeof unknown3); // Output: boolean
+
+Since unknown1 was assigned to ‘foo’ a string, typeof unknown1 will return string. Just like how unknown2 was assigned 10 which is a number, typeof unknown2 will return number. Or how unknown3 is assigned to true, which is a boolean.
+
+Conditional Statements
+
+Conditional statements are like if else decisions. A conditional statement checks a specific condition(s) and performs a task based on that condition. 
+	We will explore how programs make decisions by evaluating conditions and introduce logic into the code.
+
+Concepts: 
+* If, else if, and else statements
+* Comparison operators
+* Logical operators
+* Truth vs falsy values
+* Ternary operators
+* Switch statement
+
+If Statement
+
+We perform a task based on a condition. For example, if the weather is nice today, then we will go outside. If the alarm clock right, then we’ll shut it off.
+
+In programming, we can also perform a task based on a condition using an if statement:
+If (true) {
+	console.log(’This message will print!);
+}
+// Prints: This message will print!
+
+Notice in the example we have an if statement. The if statement is composed of:
+* The if keyword followed by a set of parentheses ( ) which is followed by a code block, indicated by a set of curly braces { }.
+* Inside the parentheses ( ), a condition is provided that evaluates to true or false
+* If the condition evaluates to true, the code inside the curly braces { } runs, or executes
+* If the condition evaluates to false, the block won’t execute.
+
+
+If…Else Statements
+
+We learned about if statements where it will either run or not run code based on conditions. In many cases we’ll have code we want to run if our condition evaluates to false.
+If we want to add a default behavior to the if statement, we can add an else statement to run a block of code when the condition evaluates to false.
+
+Example:
+If (false) {
+	console.log(‘The code in this block will not run.’);
+} else {
+	console.log(‘But the code in this block will!’);
+}
+// Prints: but the code in this block will!
+
+An else statement must be paired with an if statement, and together they are referred to as an if…else statement. 
+
+Comparison Operators
+
+When writing conditional statements, sometimes we need to use different types of operators to compare values. These operators are called comparison operators.
+
+List of some handy comparison operators and their syntax:
+* Less than: <
+* Greater than: >
+* Less than or equal to: <=
+* Greater than or equal to: >=
+* Is equal to: ===
+* Is not equal to: !==
+
+Comparison operators compare the value on the left with the value on the right. 
+
+10 < 12 // Evaluates to true
+
+It can help to think of the comparison statements as a question. When the answer is “yes”, the statement is evaluates to true, and when “no”, the statement evaluates to false
+
+We can also use comparison operators on different data types like strings:
+‘Apples’ === ‘oranges’ // False
+
+We are using the identity operator (===) to check if the string ‘apples’ is the same as the string ‘oranges’. Since they are not the same the comparison statement evaluates to false.
+
+Logical Operators
+
+Working with conditionals means that we will be using booleans, true of false values. In JS, there are operators that work with boolean values known as logical operators. We can use logical operators to add more sophisticated logic to our conditionals. There are three logical operators:
+* The and operator ( && )
+* The or operator ( | | )
+* The not operator, otherwise know as the band operator ( ! )
+When we use the && operator, we are checking that two things are true:
+
+If (stopLight === ‘green’ && pedestrians === 0) {
+	console.log(‘Go!’);
+} else {
+	console.log(’Stop!’);
+}
+
+When using the && operator, both conditions must be true for the entire condition to be true and execute. If either condition is false the && operator will evaluate as false and the else block will execute.
+
+If we only care about either condition being true, we can use the | | operator:
+
+If (day === ’Saturday’ || day === ’Sunday’) {
+	console.log(‘Enjoy the weekend!’);
+} else {
+	console.log(‘Do some work.’);
+}
+
+When using the or || operator only one condition needs to be true for the overall statement to be true. In the above example day === Saturday or day === Sunday it will come back true and the code block will execute. If both conditions are false the else code block will execute since it is false.
+
+The ! Not operator reverses, or negates, the value of a boolean:
+
+Let excited = true;
+Console.log(!excited); // Prints false
+
+Let sleepy = false; 
+Console.log(!sleepy)’ // Prints: true
+
+The ! Operator will take either true value and pass back false, or false and pass back true. 
+
