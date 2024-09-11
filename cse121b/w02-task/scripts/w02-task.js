@@ -20,6 +20,8 @@ const yearElement = document.querySelector('#year');
 // and assign it to the variable imageElement
 let imageElement = document.querySelector("img[src='images/placeholder.png']");
 
+let foodElement = document.getElementById('food');
+
 
 
 /* Step 4 - Adding Content */
@@ -34,7 +36,7 @@ imageElement.setAttribute('alt', `Picture of ${fullName}`);
 
 
 /* Step 5 - Array */
-
+let favoriteFood = ['Rice', 'Chilli', 'Pasta', 'Pizza'];
 
 
 
