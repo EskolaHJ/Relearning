@@ -36,8 +36,35 @@ imageElement.setAttribute('alt', `Picture of ${fullName}`);
 
 
 /* Step 5 - Array */
+// this code is an array that hold multiple values
 let favoriteFood = ['Rice', 'Chilli', 'Pasta', 'Pizza'];
 
+// Joins the elements of the favoriteFood array into a single string, separated by commas, and assigns it to foodString
+const foodString = favoriteFood.join(',');
+
+// Updates the inner HTML of the foodElement with the value of foodString
+foodElement.innerHTML = foodString;
+
+// Adds the string 'Crab' to the end of the favoriteFood array
+const moreFavoriteFood = 'Crab';
+
+// Updates the inner HTML of the foodElement to display the updated favoriteFood array on a new line
+favoriteFood.push(moreFavoriteFood);
+
+// Removes the first item from the favoriteFood array
+foodElement.innerHTML = `<br>${favoriteFood}`;
+
+// Appends the updated favoriteFood array to the inner HTML of the foodElement, displaying it on a new line
+favoriteFood.shift();
+
+// Appends the updated favoriteFood array to the inner HTML of the foodElement, displaying it on a new line
+foodElement.innerHTML += `<br>${favoriteFood}`;
+
+// Removes the last item from the favoriteFood array
+favoriteFood.pop();
+
+// Appends the updated favoriteFood array to the inner HTML of the foodElement, displaying it on a new line
+foodElement.innerHTML += `<br>${favoriteFood}`;
 
 
 
