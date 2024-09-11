@@ -19,7 +19,7 @@ const yearElement = document.querySelector('#year');
 // Get the first <img> element that has a 'src' attribute with the value of 'placeholder.png'
 // and assign it to the variable imageElement
 let imageElement = document.querySelector("img[src='images/placeholder.png']");
-
+// Get the HTML element with the ID 'food' and assigning it to the variable 'foodElement'
 let foodElement = document.getElementById('food');
 
 
@@ -29,7 +29,9 @@ let foodElement = document.getElementById('food');
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 // Set the text content of 'yearElement' to the current year (note: you may want just the year part, e.g., currentYear.getFullYear())
 yearElement.textContent = currentYear;
+// sets the src attribute for imageElement and value
 imageElement.setAttribute('src', profilePicture);
+// sets the alt description to the string and variable set up in the code above
 imageElement.setAttribute('alt', `Picture of ${fullName}`);
 
 
